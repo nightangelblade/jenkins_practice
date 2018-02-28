@@ -1,0 +1,14 @@
+---
+- name: Test playbook for Jenkins to execute
+  gather_facts: yes
+  hosts: "localhost"
+  become: no
+  tasks:
+  - name: Execute helloworld.sh
+    shell: helloworld.sh
+
+  - name: Execute test_shell1
+    shell: test_shell1 $testparam1 $testparam2 $testparam3
+
+  - name: Execute test_shell2
+    shell: test_shell2 $testparam4
