@@ -8,7 +8,7 @@
     shell: ./helloworld.sh
 
   - name: Execute test_shell1
-    shell: test_shell1 $testparam1 $testparam2 $testparam3
+    shell: ./test_shell1 $testparam1 $testparam2 $testparam3
 
   - name: Execute test_shell2
-    shell: test_shell2 $testparam4
+    shell: ./test_shell2 $testparam4
