@@ -1,6 +1,0 @@
-if [ $1 = hello ]
-then
-echo "Hello World"
-else
-echo "What was that?"
-fi
